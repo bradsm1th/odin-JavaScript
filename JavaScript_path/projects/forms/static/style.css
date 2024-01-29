@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fira+Sans:wght@300;400;600&display=swap');
+
+
+body{
+    min-height: 100vh;
+    /* color: red; */
+    font-family: "Fira Sans", sans-serif;
+    /* max-width: 1200px; */
+    background-color: linear-gradient(gray, darkgreen);
+}
+
+.form li {
+    list-style: none;
+    /* color: blue; */
+}
+
+.form label {
+    text-transform: uppercase;
+    font-size: .7em;
+    font-weight: 600;
+    letter-spacing: .1em;
+    display: block;
+}
+
+#existing a {
+    text-decoration: none;
+    color: darkgreen
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    max-width: 400px;
+    row-gap: 1rem;
+}
+
+.text p:first-child {
+    margin-block-start: 7rem;
+}
+
+.text ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-inline: 0;
+}
+
+.text form li {
+    display: flex;
+    flex-direction: column;
+    /* gap: .2em; */
+    /* margin-inline-end: 1rem; */
+}
+
+.text label {
+    color: #333;
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-family: "Fira Mono", monospace;
+}
+
+.artwork {
+    background-image: url('/static/background.jpeg');
+    background-size:cover;
+    /* height: 100vh; */
+    /* height: auto; */
+    /* width: 100% */
+    position: relative;
+}
+
+.artwork > *, .artwork a {
+    color: white;
+}
+
+.artwork footer {
+    border: 2px solid gold;
+    position: absolute;
+    bottom: 0;
+    /* height: 100vh; */
+}
+.artwork div {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: flex-end; */
+    
+    position: relative;
+    text-align: center;
+}
+
+.artwork div h2 {
+    /* position: absolute; */
+    /* top: 4rem; */
+    /* left: 14rem; */
+    backdrop-filter: grayscale(60%) blur(1px);
+    box-shadow: 0 0 0px 0px;
+    font-family: "Fira Mono", monospace;
+    padding-block: 2rem;
+    text-transform: uppercase;
+    font-size: clamp(2rem, 3rem, 4rem);
+    letter-spacing: .4rem;
+}
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+
+}
+
+button {
+    color: white;
+    background-color: darkgreen;
+    padding-block: .4rem;
+    padding-inline: 2rem;
+    border-radius: .5rem;
+    max-width: 40%;
+}
