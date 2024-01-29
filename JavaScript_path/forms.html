@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>hi!</h1>
+    <form action="example.com/path" method="post">
+        <fieldset>
+            <legend>
+                <h2>Your info</h2>
+            </legend>
+            <label for="first">First name:</label>
+            <!-- name == "name for the server to recognize" -->
+            <input type="text" id="first" placeholder="name, yo" name="first_name">
+            <label>Email:
+                <input type="email" name="email" id="">
+            </label>
+            <br />
+            <label for="bday">Birthday:</label>
+            <input type="date" name="bday" id="bday">
+        </fieldset>
+        <br />
+        <textarea name="written" id="" cols="30" rows="10"></textarea>
+        <br />
+        <select name="choice" id="">
+            <option value="1">Choice 1</option>
+            <option value="2">Choice 2</option>
+            <option value="3" selected>Choice 3</option>
+            <option value="4">Choice 4</option>
+        </select>
+
+        <select name="fashion" id="">
+            <optgroup label="clothing">
+                <option value="1">clothing 1</option>
+                <option value="2">clothing 2</option>
+                <option value="3">clothing 3</option>
+            </optgroup>
+            <optgroup label="shoes">
+                <option value="1">shoes 1</option>
+                <option value="2">shoes 2</option>
+                <option value="3">shoes 3</option>
+            </optgroup>
+        </select>
+        <br />
+        <input type="radio" name="radios" id="1">
+        <label for="1">Choice 1</label>
+        <br />
+        <input type="radio" name="radios" id="2">
+        <label for="2">Choice 2</label>
+        <br />
+        <input type="radio" name="radios" id="3">
+        <label for="3">Choice 3</label>
+    </form>
+
+    <h2>Pizza Toppings</h2>
+
+    <div>
+        <input type="checkbox" id="sausage" name="topping" value="sausage">
+        <label for="sausage">Sausage</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="onions" name="topping" value="onions" checked>
+        <label for="onions">Onions</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+        <label for="mushrooms">Mushrooms</label>
+    </div>
+
+    <button type="reset">RESET THIS FORM</button>
+
+
+    <fieldset>
+        <legend>What would you like to drink?</legend>
+        <input type="radio" name="drink" id="tea" value="tea">
+        <label for="tea">Tea</label>
+        <input type="radio" name="drink" id="soda" value="soda">
+        <label for="sode">Soda</label>
+    </fieldset>
+
+    <textarea cols="30" rows="8" placeholder="…type plz" style='resize: vertical;'></textarea>
+
+    <select name="" id="groups">
+        <optgroup label="fruits">
+            <option value="">Banana</option>
+            <option value="Cherry">Cherry</option>
+            <option value="Lemon">Lemon</option>
+        </optgroup>
+        <optgroup label="veggies">
+            <option value="Carrot">Carrot</option>
+            <option value="Eggplant">Eggplant</option>
+            <option value="Potato">Potato</option>
+        </optgroup>
+    </select>
+
+    <br />
+    <label for="fruit">Fave fruit?</label>
+    <input type="text" name="fruit" id="fruit" list="suggestion">
+    <datalist id="suggestion">
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>Blackberry</option>
+        <option>Blueberry</option>
+        <option>Lemon</option>
+        <option>Lychee</option>
+        <option>Peach</option>
+        <option>Pear</option>
+    </datalist>
+
+    <br />
+    <meter min="0" max="100" value="15" low="33" high="66" optimum="0" style="width:80ch;">25</meter>
+
+    <br />
+    <progress max="100" value="45">75/100</progress>
+
+</body>
+
+</html>

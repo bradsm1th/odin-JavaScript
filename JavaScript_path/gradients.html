@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            border: .2rem solid black;
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        #box {
+            /* ============================
+            /* just for gradients */
+            /* ===========================*/
+            
+            /* just two colors, default angle of 0 deg  */
+            background: 
+                linear-gradient(orangered 50%, cadetblue 70%);
+            
+            /* same two, rotated 45deg */
+            /* background: linear-gradient(45deg, orangered, cadetblue); */
+            
+            /* going from bottom right to top left */
+            /* background: linear-gradient(to left top, orangered, darkslategray); */
+        
+            /* color stops */
+            /* background: linear-gradient(red, orange, yellow, blue, green, indigo, violet); */
+            /* without a following percentage, the color value is placed halfway between the one before and the one after it */
+
+            /* solid red from beginning to the 10% mark, solid blue from 90% to the end but the 'midpoint' is at 30%, not 50%*/
+            background: linear-gradient(red 30%, 40%, blue 90%);
+
+            /* changes from red to yellow at 40% and yellow to blue  */
+            /* background: linear-gradient(red 40%, yellow 30%, blue 65%); */
+        }
+    </style>
+</head>
+<body>
+   <div id="box"></div> 
+</body>
+</html>
