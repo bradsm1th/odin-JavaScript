@@ -79,7 +79,8 @@ body{
 .artwork footer {
     position: absolute;
     bottom: 30px;
-    /* height: 100vh; */
+    font-family: "Fira Mono", monospace;
+    font-size: .8rem;
 }
 .artwork div {
     display: flex;
@@ -117,4 +118,21 @@ button {
     padding-inline: 2rem;
     border-radius: .5rem;
     max-width: 40%;
+}
+
+
+@media (max-width: 762px) {
+    main {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .artwork {
+        /* display: none; */
+    }
+
+    .text {
+        order: last;
+    }
 }
