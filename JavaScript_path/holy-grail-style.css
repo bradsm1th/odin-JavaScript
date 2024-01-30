@@ -1,0 +1,48 @@
+:root {
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.container {
+    /* border: 1px solid black; */
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+}
+
+.header {
+    background-color: #2a5f58;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+.sidebar {
+    background-color: #275b91;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+}
+.nav {
+    background-color: #5938d0;
+}
+.article {
+    background-color: #7330bd;
+    padding: .8rem;
+}
+.footer {
+    background-color: #3a3f4c;
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 1;    
+}
+
+
+.container > div {
+    border-radius: 2%;
+    text-align: center;
+    padding-block-start: 1rem;
+    font-size: 1rem;
+}
