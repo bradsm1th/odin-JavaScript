@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            font-family: "ubuntu", system-ui, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding-inline: 1rem;
+
+        }
+
+        fieldset form {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 1rem;
+        }
+
+        .book_list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .book_list li {
+            min-height: 100px;
+            border: .1rem solid goldenrod;
+            padding: .4rem;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hi (library)</h1>
+    <main>
+        <fieldset>
+            <h2>Add a Book</h2>
+            <form action="#" method="post">
+                <label for="book_name">Name of book:</label>
+                <input type="text" id="book_name">
+                <label for="book_author">Author:</label>
+                <input type="text" id="book_author">
+                <label for="book_pages" min="0">Pages:</label>
+                <input type="text" id="book_pages">
+                <label for="book_is_read">Have you read this already?</label>
+                <input type="checkbox" id="book_is_read">
+                <button type="submit">Add book</button>
+            </form>
+        </fieldset>
+        <h3>Your Books</h3>
+        <input id='list_books' type="button" value="list books">
+        <ul class="book_list">
+            <li>static</li>
+        </ul>
+    </main>
+    <title>Library</title>
+    <script src="script.js"></script>
+</body>
+
+</html>
